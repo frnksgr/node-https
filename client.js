@@ -4,7 +4,7 @@ var fs = require("fs");
 // NOTE: default agent does not work with client authentication
 var agent = new https.Agent({
     ca: fs.readFileSync("ssl/ca-cert.pem"),
-    pfx: fs.readFileSync("ssl/client-cert.pfx"),
+    pfx: fs.readFileSync("ssl/client.pfx"),
 //    cert: fs.readFileSync("ssl/client-cert.pem"),
 //    key: fs.readFileSync("ssl/client-key.pem"),
     passphrase: "foobar",
